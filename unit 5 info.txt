@@ -1,0 +1,97 @@
+# College Cable Network Using Kruskal's Algorithm
+
+## Problem Statement
+Represent college buildings and possible cable connections with installation costs, and apply
+ Kruskal's algorithm to construct a minimum-cost network connecting all buildings.
+
+## Objective
+- To represent college buildings as vertices and cable connections as weighted edges.
+- To implement Kruskal's Minimum Spanning Tree (MST) algorithm.
+- To find the minimum installation cost required to connect all buildings.
+- To understand the greedy approach in graph algorithms.
+
+## Introduction
+A college campus contains multiple buildings that require cable connections for communication 
+and networking. Installing cables between every pair of buildings can be expensive.
+
+Kruskal's algorithm helps construct a minimum-cost network by selecting the cheapest available 
+connections without forming cycles. It uses a weighted graph to represent buildings and cable 
+installation costs.
+
+## Data Structures Used
+- **Graph:** Represents college buildings and possible cable connections.
+- **Edge:** Stores two building numbers and the cable installation cost.
+- **Vector:** Stores the list of possible connections.
+- **Array:** Stores building names and parent information.
+- **Disjoint Set:** Helps detect cycles while selecting connections.
+
+## Algorithm
+1. Start the program.
+2. Enter the number of college buildings.
+3. Enter the name of each building.
+4. Enter the number of possible cable connections.
+5. Enter the two building numbers and installation cost for each connection.
+6. Sort all connections in ascending order of cost.
+7. Initialize each building as a separate set.
+8. Select the cheapest connection that does not form a cycle.
+9. Merge the sets of the connected buildings.
+10. Repeat until \(V-1\) connections are selected or all connections have been checked.
+11. Display the selected connections and the total installation cost.
+12. If all buildings cannot be connected, display a disconnected-network message.
+13. Stop.
+
+## Sample Input
+```text
+Number of buildings: 4
+
+Building 1: Library
+Building 2: Canteen
+Building 3: Hostel
+Building 4: College
+
+Number of connections: 5
+
+1 2 40
+1 3 20
+2 3 10
+2 4 30
+3 4 50
+```
+
+## Sample Output
+```text
+MINIMUM COST CABLE NETWORK
+
+Canteen - Hostel : Rs. 10
+Library - Hostel : Rs. 20
+Canteen - College : Rs. 30
+
+Minimum installation cost = Rs. 60
+```
+
+## Result
+The College Cable Network application successfully applies Kruskal's algorithm to determine a minimum spanning tree
+. It selects the minimum-cost connections without creating cycles and calculates the total installation cost when all 
+buildings can be connected.
+
+## Conclusion
+Kruskal's algorithm provides an efficient way to design a minimum-cost cable network for a college campus. By selecting
+ the cheapest valid connections, it reduces installation costs while ensuring that all buildings are connected whenever
+ the graph is connected.
+
+## Time Complexity
+The time complexity is **O(E log E)**, where E is the number of possible cable connections. This is mainly due to sorting 
+the edges by installation cost.
+
+## Applications
+- College campus networking
+- Computer laboratory cable installation
+- Telephone network planning
+- Electrical distribution network design
+- Communication network optimization
+
+## Technologies Used
+- **Language:** C++
+- **Compiler:** Dev-C++
+- **Algorithm:** Kruskal's Minimum Spanning Tree
+- **Concepts:** Graphs, Greedy Algorithms, Sorting, and Disjoint Sets

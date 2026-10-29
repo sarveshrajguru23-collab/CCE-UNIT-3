@@ -1,0 +1,30 @@
+Enter number of buildings: 4
+Enter name of building 1: Library
+Enter name of building 2: Canteen
+Enter name of building 3: Hostel
+Enter name of building 4: College
+
+Enter number of possible cable connections: 5
+
+Connection 1:
+Enter two building numbers and cost: 1 2 40
+
+Connection 2:
+Enter two building numbers and cost: 1 3 20
+
+Connection 3:
+Enter two building numbers and cost: 2 3 10
+
+Connection 4:
+Enter two building numbers and cost: 2 4 30
+
+Connection 5:
+Enter two building numbers and cost: 3 4 50
+
+
+MINIMUM COST CABLE NETWORK
+Canteen - Hostel : Rs. 10
+Library - Hostel : Rs. 20
+Canteen - College : Rs. 30
+
+Minimum installation cost = Rs. 60
